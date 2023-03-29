@@ -1,0 +1,51 @@
+<footer class="footer">
+    <nav class="footer__menu">
+        <!-- <a class="logo">логотип</a> -->
+
+        <ul class="footer__list">
+            <li>
+                <a class="logo">логотип</a>
+            </li>
+            
+            <li>
+                <a routerLink="/"
+                (click)="scrollToMain()"
+                >главная</a>
+            </li>
+            <li>
+                <a routerLink="/about"
+                (click)="scrollToAbout()"
+                >о нас</a>
+            </li>
+            <li>
+                <a routerLink="/technologies"
+                (click)="scrollToTech()"
+                >технологии</a>
+            </li>
+            <li>
+                <a routerLink="/reviews"
+                (click)="scrollToReview()"
+                >отзывы</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <section class="links">
+        <div>
+            <a href="#">
+                <img class="facebook" src="/assets/footer/facebook.png" alt="">
+            </a>
+            <a href="#" >
+                <img class="inst" src="/assets/footer/instagramm.png" alt="">
+            </a>
+            <a href="#" >
+                <img  class="twitter" src="/assets/footer/twitter.png" alt="">
+            </a>
+            <a href="#">
+                <img class="whatsapp" src="/assets/footer/whatsapp.png" alt="">
+            </a>
+        </div> 
+    </section>
+    <span>Все права защищены</span>
+</footer>

@@ -1,0 +1,53 @@
+<header class="header" id="/">
+    
+    <nav class="header__menu">
+        
+        <input type="checkbox" id="hmt" class="hidden-menu-ticker"  *ngIf="menuToggle">
+        <label class="btn-menu" for="hmt" (click)="toggle()">
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+        </label>
+
+
+        <a href="" class="header__logo">логотип</a>
+        <ul class="header__list hidden-menu">
+            <li >
+                <a 
+                (click)="menuToggle = false"
+                routerLink="/"
+                routerLinkActive="active"
+                >главная</a>
+            </li>
+            <li>
+                <a 
+                (click)="menuToggle = false"
+                routerLink="/about" 
+                routerLinkActive="active"
+                (click)="scrollToAbout()">о нас</a>
+            </li>
+            <li>
+                <a 
+                (click)="menuToggle = false"
+                routerLink="/technologies"
+                routerLinkActive="active"
+                (click)="scrollToTech()"
+                >технологии</a>
+            </li>
+            <li>
+                <a 
+                (click)="menuToggle = false"
+                routerLink="/reviews"
+                routerLinkActive="active"
+                (click)="scrollToReview()"
+                
+                >отзывы</a>
+            </li>
+            
+            
+        </ul>
+
+        <ui-switch class="switch"></ui-switch>
+        <p class="translate">ru</p>
+    </nav>
+</header>

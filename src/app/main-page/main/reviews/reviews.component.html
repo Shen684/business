@@ -1,0 +1,102 @@
+
+
+<!-- <main>
+
+
+    <div style="width: 500px; height: 200px; margin: 0 auto;">  -->
+        <!-- <div [slides]="reviews"> -->
+    
+        <!-- </div> -->
+    <!-- </div> -->
+    
+
+    
+    <!-- <div *ngFor="let item of reviews, let index = index">
+        <div [(ngModel)]="item[currentRewiew]">
+
+            <button (click)="changeSlide(item.id -1)">Назад</button>
+
+            <p> {{ item.client_name }} </p>
+            <p>{{ item.text }}</p>
+
+            <button (click)="changeSlide(item.id +1)">Вперед</button>
+
+        </div>
+    </div> -->
+<!-- </main> -->
+
+<!-- 
+<section class="slider" id="reviews">
+  <div class="for_span">
+    <span>Отзывы</span>
+  </div>
+  <div class="dot"(click)="goToSlide(reviews[currentIndex].id)">
+   </div>   
+  
+  <div class="allData">
+    
+    
+    
+    
+    <button (click)="goToPrevious()" class="leftArrow">❰</button> -->
+    
+    <!-- <span class="material-symbols-outlined leftArrow" (click)="goToPrevious()">
+      arrow_circle_left
+    </span>
+
+    
+    <div class="data">
+          <p class="image" *ngIf="reviews[currentIndex]?.client_photo">
+            <img [src]="reviews[currentIndex]?.client_photo" alt="">
+          </p>
+          <img [src]="reviews[currentIndex].id" width="50px"> -->
+          <!-- {{ reviews[currentIndex]?.id }} 
+          <section class="allSection">
+          <div class="name">
+            {{ reviews[currentIndex]?.client_name }}
+          </div>
+          <div class="text">
+            {{ reviews[currentIndex]?.text }}
+          </div>
+        </section>
+      </div>
+      <span class="material-symbols-outlined rightArrow" (click)="goToNext()" >
+        arrow_circle_right
+      </span>
+      <button (click)="goToNext()" class="rightArrow">❱</button>
+    </div>
+  </section> -->
+  
+  
+  <section id="reviews">
+  <div class="for_span">
+      <span>Отзывы</span>
+  </div>
+  
+  <swiper [config]="config">
+    <div class="swiper-wrapper" >
+      <div class="swiper-slide" *ngFor="let res of reviews">
+
+        <section class="allSection">
+        <p class="image" *ngIf="res?.client_photo">
+          <img [src]="res.client_photo" alt="" width="300px">
+        </p>
+  
+          <div class="name">
+            {{ res.client_name }}
+          </div>
+          <div class="text">
+            {{ res.text }}
+          </div>
+      </section>
+    </div>
+ 
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</swiper>
+
+</section>

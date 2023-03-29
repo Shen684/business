@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve -o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -18,7 +18,12 @@
     "@angular/platform-browser": "^15.1.0",
     "@angular/platform-browser-dynamic": "^15.1.0",
     "@angular/router": "^15.1.0",
+    "ng-smooth-scroll": "^1.7.3",
+    "ng2-smooth-scroll": "^1.0.1",
+    "ngx-ui-switch": "^14.0.3",
+    "ngx-useful-swiper": "^10.0.1",
     "rxjs": "~7.8.0",
+    "swiper": "^9.1.1",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },

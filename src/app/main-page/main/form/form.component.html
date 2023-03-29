@@ -1,0 +1,30 @@
+
+<div class="allBlock">
+    <div class="leftBlock" >
+        <img src="/assets/application/app.jpg" alt="">
+    </div>
+    
+    <div class="rightBlock" id="blocks">
+        <span class="span">ОСТАВЬТЕ ЗАЯВКУ</span>
+        <form #myForm="ngForm" [formGroup]="allForm" (ngSubmit)="submit(myForm.value) ">
+        <input  #name type="text" placeholder="ИМЯ" name="name" formControlName="name" >
+        <!-- {{ name.className }} -->
+        <div class="alert" [style]="'opacity: 0;'">
+            <span class="alert-span">Поле 'Имя' обязательно для заполнения</span>
+        </div>
+        <input required   type="email" placeholder="E-MAIL" name="email" id="email" formControlName="email">
+        <div class="alert" [style]="allForm.controls['email'].invalid && allForm.controls['email'].touched ? 'opacity: 1;' : 'opacity: 0'">
+            <span class="alert-span">Поле 'Email' обязательно для заполнения</span>
+        </div>
+        <input required type="text" placeholder="СООБЩЕНИЕ" name="text" id="text"  formControlName="text">
+        <div class="alert" [style]="allForm.controls['text'].invalid && allForm.controls['text'].touched ? 'opacity: 1;' : 'opacity: 0'">
+            <span class="alert-span">Поле 'Соощение' обязательно для заполнения</span>
+        </div>
+        
+        <div class="buttons">
+            <button class="btn1" type="submit"  [disabled]="allForm.invalid">Отправить</button>
+            <button class="btn2" type="button" (click)="myForm.reset()">Очистить</button>
+        </div>
+    </form>
+</div>
+</div>
