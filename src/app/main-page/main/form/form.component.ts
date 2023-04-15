@@ -15,7 +15,6 @@ export class FormComponent  {
   done: boolean = false;
   user: Form = new Form('', '', '')
 
-     
   constructor(private httpService: FormService) {
   }
 
@@ -27,21 +26,19 @@ export class FormComponent  {
       text: new FormControl('', [Validators.required, Validators.minLength(4)]),
     })
   }
-  
-  onSubmit(users: NgForm) {
-    console.log(users);
-    
-  }
-  
+
   submit(user: Form) {
     this.httpService.postData(user)
     .subscribe({
-      
       next:(data: any) => {this.receivedUser=data; this.done=true;},
       error: error => console.log(error)
-  });
+    });
+    this.toggleDone = !this.toggleDone
   }
 
+  toggleDone: boolean = true
 
-
+  changeDone() {
+    this.toggleDone = !this.toggleDone
+  }
 }

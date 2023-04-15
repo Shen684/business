@@ -7,10 +7,21 @@ import { ViewportScroller } from '@angular/common';
   styleUrls: ['./favorit.component.scss']
 })
 export class FavoritComponent {
-  constructor (private viewportScroller: ViewportScroller) {}
+  photoTog: boolean = true
+  labLENG = localStorage.getItem('lang')
+  togTranslate: boolean = true
+  constructor (private viewportScroller: ViewportScroller) {
+    let labLENG = localStorage.getItem('lang')
+    if (labLENG == 'ru') {
+      this.togTranslate = false
+    }
+    if (labLENG == 'en') {
+      this.togTranslate = true
+    }
+  }
 
   scrollToBlocks() {
     this.viewportScroller.scrollToAnchor('blocks');
   }
-  
+
 }

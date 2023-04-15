@@ -5,26 +5,33 @@
     </div>
     
     <div class="rightBlock" id="blocks">
-        <span class="span">ОСТАВЬТЕ ЗАЯВКУ</span>
-        <form #myForm="ngForm" [formGroup]="allForm" (ngSubmit)="submit(myForm.value) ">
-        <input  #name type="text" placeholder="ИМЯ" name="name" formControlName="name" >
-        <!-- {{ name.className }} -->
+    <div class="none" *ngIf="toggleDone">
+    <span class="span" i18n="@@form_z">ОСТАВЬТЕ ЗАЯВКУ</span>
+    <form #myForm="ngForm" [formGroup]="allForm" (ngSubmit)="submit(myForm.value) ">
+        <input  #name type="text" i18n-placeholder placeholder="ИМЯ" name="name" formControlName="name" >
         <div class="alert" [style]="'opacity: 0;'">
-            <span class="alert-span">Поле 'Имя' обязательно для заполнения</span>
+            <span class="alert-span" i18n="@@form_name">Поле 'Имя' обязательно для заполнения</span>
         </div>
-        <input required   type="email" placeholder="E-MAIL" name="email" id="email" formControlName="email">
+        <input required   type="email" i18n-placeholder placeholder="E-MAIL" name="email" id="email" formControlName="email">
         <div class="alert" [style]="allForm.controls['email'].invalid && allForm.controls['email'].touched ? 'opacity: 1;' : 'opacity: 0'">
-            <span class="alert-span">Поле 'Email' обязательно для заполнения</span>
+            <span class="alert-span" i18n="@@form_email">Поле 'Email' обязательно для заполнения</span>
         </div>
-        <input required type="text" placeholder="СООБЩЕНИЕ" name="text" id="text"  formControlName="text">
+       <input required type="text" i18n-placeholder placeholder="СООБЩЕНИЕ" name="text" id="text"  formControlName="text">
         <div class="alert" [style]="allForm.controls['text'].invalid && allForm.controls['text'].touched ? 'opacity: 1;' : 'opacity: 0'">
-            <span class="alert-span">Поле 'Соощение' обязательно для заполнения</span>
+            <span class="alert-span" i18n="@@form_message">Поле 'Соощение' обязательно для заполнения</span>
         </div>
-        
+    
         <div class="buttons">
-            <button class="btn1" type="submit"  [disabled]="allForm.invalid">Отправить</button>
-            <button class="btn2" type="button" (click)="myForm.reset()">Очистить</button>
+            <button class="btn1" type="submit" [disabled]="allForm.invalid" i18n="@@form_send">Отправить</button>
+            <button class="btn2" type="button" (click)="myForm.reset()" i18n="@@form_clear">Очистить</button>
         </div>
     </form>
 </div>
+</div>
+
+    <div class="done" *ngIf="!toggleDone">
+        <img src="/assets/form/done.png" alt="done">
+        <span class="thx" i18n="@@form_thx">Спасибо за заявку!</span>
+        <span class="mail" i18n="@@form_connect">В скором времени мы с вами свяжемся по Email</span>
+    </div>
 </div>

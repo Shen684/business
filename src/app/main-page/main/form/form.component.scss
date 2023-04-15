@@ -1,23 +1,15 @@
-
-// .ng-valid:required, .ng-valid.required {
-//     border-left: 5px solid green;
-// }
-// .ng-invalid:not(form) .ng-touched.required {
-//     border-left: 5px solid rgb(128, 0, 0);
-    
-// }
-
 .allBlock {
-    margin: 6.25vw 0;
+    padding: 6.25vw 0;
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     height: 56.25vw;
+    position: relative;
     .leftBlock {
         grid-column: 1/2;
         img {
             width: 100%;
-            height: 100%;
             object-fit: cover;
         }
     }
@@ -25,23 +17,23 @@
         grid-column: 2/3;
         justify-self: center;
         align-self: center;
+        padding: 27% 0;
         .alert {
             display: block;
             margin: 0 auto;
-            // margin-left: 8.06vw;
             text-align: center;
             background: #ecb8b8;
             width: 25vw;
             .alert-span {
                 display: block;
-                font-size: 0.63vw;
+                font-size: 0.93vw;
             }
         }
         .span {
             display: block;
             text-align: center;
             font-size: 3vw;
-            font-weight: 500;
+            font-weight: 600;
             font-family: 'Montserrat', sans-serif;
             margin: 0 auto 3.75vw auto;
         }
@@ -58,6 +50,7 @@
                 outline: none;
                 margin: 0 auto;
                 display: block;
+                font-size: 1.3vw;
             }
             .buttons {
                 width: 25vw;
@@ -74,6 +67,7 @@
                     border-radius: 0.44vw;
                     outline: none;
                     border: 2px solid #4E86C8;
+                    transition: 0.3s;
                     &:disabled{
                         border: 2px solid rgb(186, 186, 186);
                     }
@@ -82,6 +76,7 @@
                     }
                 }
                 .btn2 {
+                    transition: 0.3s;
                     margin-left: 0.19vw;
                     padding: 0.63vw 0px 0.63vw 0.31vw;
                     background-color: white;
@@ -97,43 +92,61 @@
             }
         }
     }
-}
 
+    .done {
+        width: 50%;
+        img {
+            width: 6.13vw;
+            position: absolute;
+            top: 30%;
+            right: 22%;
+        }
+        .thx {
+            width: 30%;
+            position: absolute;
+            top: 43%;
+            right: 10%;
+            text-align: center;
+            font-size: 3vw;
+        }
+        .mail {
+            width: 30%;
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            text-align: center;
+            font-size: 2vw;
+        }
+    }
+}
 
 @media screen and (max-width: 600px) {
     .allBlock {
-        margin-top: 26.40vw;
+        padding-top: 26.40vw;
         display: block;
         width: 100%;
         height: 247.73vw;
-        // height: 10;
         .leftBlock img{
             height: 112.53vw;
-            // height: 112.53vw;
             object-fit: cover;
-            // height: auto;
             width:100%;
         }
-
         .rightBlock {
             height: 135.20vw;
             width: 100%;
             .span {
                 width: 85.87vw;
-                margin: 13.33vw auto 5.33vw auto;
+                padding: 13.33vw auto 5.33vw auto;
                 font-size: 8.53vw;
             }
             form {
-
                 input {
                     height: 10.67vw;
                     width: 66.67vw;
-                    // margin-bottom: 5.33vw;
                     font-size: 4.27vw;
                     &::placeholder {
-                        // color: blue;
                         font-size: 4.27vw;
-                      }
+                    }
                 }
                 .alert {
                     width: 66.67vw;
@@ -141,7 +154,6 @@
                         font-size: 3.5vw;
                     }
                 }
-
                 .buttons {
                     width: 66.67vw;
                     height: 9.07vw;
@@ -153,7 +165,31 @@
                         
                     }
                 }
-
+            }
+        }
+        .done {
+            width: 50%;
+            img {
+                width: 18.33vw;
+                position: absolute;
+                top: 63%;
+                left: 40%;
+            }
+            .thx {
+                width: 50%;
+                position: absolute;
+                top: 74%;
+                right: 25%;
+                text-align: center;
+                font-size: 5.33vw;
+            }
+            .mail {
+                width: 60%;
+                position: absolute;
+                top: 80%;
+                right: 20%;
+                text-align: center;
+                font-size: 4.33vw;
             }
         }
     }

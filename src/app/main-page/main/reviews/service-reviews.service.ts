@@ -9,6 +9,6 @@ export class ServiceReviewsService {
   constructor(private http: HttpClient) { }
 
   public getReviews() {
-    return this.http.get('https://ilya-shevelev.ru/ru/api/v1/reviews/')
+    return this.http.get('https://webion.pro/ru/api/v1/reviews/')
   }
 }

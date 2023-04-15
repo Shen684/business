@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "project": {
+      "i18n": {
+        "locales": {
+          "en": "src/locale/messages.en.xlf",
+          "ru": "src/locale/messages.ru.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,6 +23,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": true,
+            "i18nMissingTranslation": "error",
             "outputPath": "dist/project",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -32,11 +40,20 @@
             "styles": [
               "src/styles.scss",
               "./node_modules/ngx-ui-switch/ui-switch.component.css"
-              
             ],
             "scripts": []
           },
           "configurations": {
+            "en": {
+              "localize": [
+                "en"
+              ]
+            },
+            "ru": {
+              "localize": [
+                "ru"
+              ]
+            },
             "production": {
               "budgets": [
                 {
@@ -66,6 +83,12 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
+            "en": {
+              "browserTarget": "project:build:en"
+            },
+            "ru": {
+              "browserTarget": "project:build:ru"
+            },
             "production": {
               "browserTarget": "project:build:production"
             },
@@ -78,7 +101,9 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "project:build"
+            "browserTarget": "project:build",
+            "format": "xlf",
+            "outputPath": "src/locale"
           }
         },
         "test": {
@@ -98,6 +123,16 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "project:build:production",
+            "firebaseProject": "project-i18n",
+            "firebaseHostingSite": "webion"
           }
         }
       }

@@ -11,7 +11,8 @@ const routes: Routes = [
   {path: 'about', component: FavoritComponent},
   {path: 'technologies', component: TechnologiesComponent},
   {path: 'reviews', component: ReviewsComponent},
-  {path: 'blocks', component: FormComponent}
+  {path: 'blocks', component: FormComponent},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
   // {path: '**', }
 
 ];

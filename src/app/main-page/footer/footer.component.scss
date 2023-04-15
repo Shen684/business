@@ -3,19 +3,6 @@
     background: #4E86C8;
     height: 15.44vw;
     .footer__menu {
-        // .logo {
-            //     height: 6.56vw;
-        //     grid-auto-flow: column;
-        //     // grid-auto-rows: minmax(auto, 6.56vw);
-        //     position: absolute;
-        //     // top: 2.53vw;
-        //     margin-top: auto;
-        //     left: 23.88vw;
-        //     font-size: 1.25vw;
-        //     color: white;
-            
-        // }
-
         .footer__list {
             grid-auto-flow: column;
             display: grid;
@@ -23,44 +10,33 @@
             grid-template-columns: repeat(9, 1fr);
             height: 6.56vw;
             li:nth-child(1) {
-
                 align-self: center;
                 grid-column: 3/4;
                 display: grid;
-                // background: #000;
+                a img {
+                    width: 9.25vw;
+                }
             }
             li:nth-child(2) {
-
                 align-self: center;
                 grid-column: 4/5;
                 display: grid;
-                // background: #000;
             }
             li:nth-child(3) {
-
                 align-self: center;
                 grid-column: 5/6;
                 display: grid;
-                // background: #000;
             }
             li:nth-child(4) {
-
                 align-self: center;
                 grid-column: 6/7;
                 display: grid;
-                // background: #000;
             }
             li:nth-child(5) {
-
                 align-self: center;
                 grid-column: 7/8;
                 display: grid;
-                // background: #000;
             }
-
-
-
-
             li {
                 justify-self: center;
                 list-style-type: none;
@@ -80,13 +56,9 @@
         & div {
             grid-column: 3/4;
             & a {
-                margin: 0 1.25vw;
+                margin: 0 .85vw;
                 & img {
                     height: 2.19vw;
-                    // width: 2.19vw;
-                    .facebook {
-                        width: 1.13vw;
-                    }
                 }
             }
         }
@@ -107,33 +79,16 @@
         width: 100%;
         height: 69.33vw;
         .footer__menu {
-            // width: 100%;
             display: block;
-            
-            // .logo {
-            //     // padding-left: 16vw;
-            //     font-size: 5.33vw;
-            //     // width: 100%;
-            //     position: absolute;
-            //     top: 8vw ;
-            //     // left: 50%;
-            //     // right: 50%;
-            //     color: white;
-            //     // margin: 0px  50%;
-            // }
             .footer__list {
-                // top: 15.73vw;
-                // width: 100%;
-                // position: absolute;
-              
-
                 li:nth-child(1) {
-                    // display: block;
                     position: absolute;
-                    top: 5.33vw;
-                    // left: ;
+                    top: 3.33vw;
+                    left: 32vw;
+                    a img {
+                        width: 28vw;
+                    }
                 }
-
                 li:nth-child(2) {
                    position: absolute;
                    top: 15vw;
@@ -143,7 +98,6 @@
                     position: absolute;
                     top: 15vw;
                     right: 20vw;
-                   
                 }
                 li:nth-child(4) {
                    position: absolute;
@@ -155,54 +109,31 @@
                    top: 27vw;
                    right: 17vw;
                 }
-
-                
-
                 li {
-                    // padding: 0;
-                    // padding: 2vw 0px;
-                    
                     a {
                         font-size: 5.33vw;
                     }
                 }
-                
-                
             }
         }
-
         .links {
             display: grid;
             grid-template-columns: 1fr 6fr 1fr;
             grid-template-rows: 1fr;
-            // width: 100%;
             div {
                 position: absolute;
                 bottom: 17.47vw;
                 grid-column: 2/3;
                 justify-self: center;
                 a {
-                    .facebook {
-                        width: 5vw;
-                        // margin:0px 12.80vw 0px 17.33vw;
-                    }
-                    // .inst {
-                    //     margin-right: 10.67vw;
-                    // }
-                    // .twitter {
-                    //     margin-right: 10.67vw;
-                    // }
-
                     img {
                         width: 9.33vw;
                         height: 9.33vw;
                         margin: 0 4vw;
-                        // margin: 0px 6.90vw 0px 6.90vw;
                     }
                 }
             }
         }
-
         span {
             position: absolute;
             font-size: 4vw;

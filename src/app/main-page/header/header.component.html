@@ -1,5 +1,4 @@
-<header class="header" id="/">
-    
+<header class="header" id="/" #container>
     <nav class="header__menu">
         
         <input type="checkbox" id="hmt" class="hidden-menu-ticker"  *ngIf="menuToggle">
@@ -9,14 +8,20 @@
             <span class="third"></span>
         </label>
 
+    <a href="" class="header__logo" *ngIf="toggleLogo">
+        <img src="/assets/logo/logo_black.png"  alt="">
+    </a>
+    <a href="" class="header__logo" *ngIf="!toggleLogo">
+        <img src="/assets/logo/logo_white.png"  alt="">
+    </a>
 
-        <a href="" class="header__logo">логотип</a>
         <ul class="header__list hidden-menu">
             <li >
                 <a 
                 (click)="menuToggle = false"
                 routerLink="/"
                 routerLinkActive="active"
+                i18n="@@h_glav"
                 >главная</a>
             </li>
             <li>
@@ -24,7 +29,9 @@
                 (click)="menuToggle = false"
                 routerLink="/about" 
                 routerLinkActive="active"
-                (click)="scrollToAbout()">о нас</a>
+                (click)="scrollToAbout()"
+                i18n="@@h_we"
+                >о нас</a>
             </li>
             <li>
                 <a 
@@ -32,6 +39,7 @@
                 routerLink="/technologies"
                 routerLinkActive="active"
                 (click)="scrollToTech()"
+                i18n="@@h_tech"
                 >технологии</a>
             </li>
             <li>
@@ -40,14 +48,20 @@
                 routerLink="/reviews"
                 routerLinkActive="active"
                 (click)="scrollToReview()"
-                
+                i18n="@@h_rew"
                 >отзывы</a>
             </li>
-            
-            
         </ul>
 
-        <ui-switch class="switch"></ui-switch>
-        <p class="translate">ru</p>
+        <ui-switch class="switch switch-none" (click)="changeBody()"></ui-switch>
+        
+        <div class="translate">
+            <a href="/ru/" class="hrefRu" (click)="rusLang()" *ngIf="togTranslate">RU</a>
+        </div>
+        
+        <div class="translate">
+            <a href="/en/" class="hrefEn" (click)="enLang()" *ngIf="!togTranslate">EN</a>
+        </div>
+           
     </nav>
 </header>

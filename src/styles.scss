@@ -1,58 +1,225 @@
-/* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 0.13vw !important;
+}
+
+:root {
+    --dark-background-color: #2D384A;
+    --dark-text-color: #e0d9d9;
+}
+
+.dark-theme {
+    html, body {
+        background-color: var(--dark-background-color) !important;
+    }
+    .header {
+        background-color: var(--dark-background-color);
+        color: var(--dark-text-color);
+        .header__menu {
+            .translate {
+                .hrefRu {
+                    color: #e0d9d9;
+                }
+                .hrefEn {
+                    color: #e0d9d9;
+                }
+            }
+            background-color: #2D384A !important;
+            .header__list {
+                background-color: #2D384A !important;
+                li a {
+                    color: #e0d9d9 !important;
+                }
+            }
+        }
+    }
+    @media (max-width: 600px) {
+        .header {
+            background-color: var(--dark-background-color) !important;
+            color: var(--dark-text-color) !important;
+            .header__menu {
+                .hidden-menu-ticker {
+                    .btn-menu span {
+                        background: #e0d9d9 !important;
+                    }
+                }
+            }
+        }
+        .picture_2 {
+            background-color: var(--dark-background-color) !important;
+        }
+    }
+    .favorit {
+        --dark-background-color: #2D384A;
+        background-color: var(--dark-background-color);
+        color: var(--dark-text-color);
+        .btn {
+            --dark-background-color: #3A668B;
+            background: var(--dark-background-color) !important;
+            color: var(--dark-text-color);
+            &:hover {
+                --dark-background-color: #375b7a;
+            }
+            &:active {
+                --dark-background-color: #2e4b64;
+            }
+        }
+    }
+    .tech {
+        background-color: var(--dark-background-color);
+        .for_span {
+            background-color: var(--dark-background-color);
+            color: var(--dark-text-color)
+        }
+    }
+    .picture_1 {
+        .slider {
+            .slide-track {
+                .slide {
+                    background-color: var(--dark-background-color);
+                }
+            }
+        }
+    }
+    .picture_2 {
+        background-color: var(--dark-background-color) !important;
+        .slider-2 {
+            .slide-track-2 {
+                .slide {
+                    background-color: var(--dark-background-color);
+                }
+            }
+        }
+    }
+    #reviews {
+        color: var(--dark-text-color);
+        background-color: var(--dark-background-color);
+        swiper {
+            --dark-background-color: #3A668B;
+            .swiper-wrapper {
+                .swiper-slide {
+                    .allSection {
+                        background-color: var(--dark-background-color);
+                    }
+                }
+            }
+        }
+    }
+    .allBlock {
+        background-color: var(--dark-background-color) !important;
+        color: var(--dark-text-color);
+        .rightBlock {
+            form {
+                input {
+                    background-color: #294F74 !important;
+                    color: var(--dark-text-color) !important;
+                    &::placeholder {
+                        color: var(--dark-text-color) !important;
+                    }
+                    &:focus {
+                        color: var(--dark-text-color) !important;
+                    }
+                    border-bottom: 1px solid var(--dark-text-color) !important;
+                }
+                .alert {
+                    .alert-span {
+                        background-color: #792323;
+                    }
+                }
+                .buttons {
+                    .btn1 {
+                        &:disabled{
+                            border: 2px solid rgb(186, 186, 186) !important;
+                            background: #e9e9e9 !important;
+                            color: #5a5a5a !important;
+                        }
+                        background-color: #294F74 !important;
+                        color: var(--dark-text-color) !important;
+                        border: 2px solid var(--dark-text-color) !important;
+                        &:hover {
+                            background-color: #375b7a !important;
+                        }
+                        &:active {
+                            background-color: #2e4b64 !important;
+                        }
+                    }
+                    .btn2 {
+                        background-color: #294F74 !important;
+                        color: var(--dark-text-color) !important;
+                        border: 2px solid var(--dark-text-color) !important;
+                        &:hover {
+                            background-color: #375b7a !important;
+                        }
+                        &:active {
+                            background-color: #2e4b64 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        --dark-background-color: #3A668B;
+        background-color: var(--dark-background-color) !important;
+        color: var(--dark-text-color) !important;
+    }
+}
 
 *, html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth !important;
-    // html {
-    //   }
-    // position: relative;
-    
 }
 .switch {
-
+    top: 2.62vw !important;
+    height: 1.3vw !important;
+    right: 2.7vw !important;
+    border: none !important;
     transition: 0.3s ease-out all !important;
     .switch.checked {
-        background: rgb(189, 99, 156) !important;
+        background: rgb(39, 201, 96) !important;
         small {
             right: 1 !important;
             left: auto !important;
         }
     }
 }
-
-
-
+.switch:checked {
+    html, body {
+        background: #2e2e2e;
+    }
+}
 .switch.switch-small {
     position: absolute ;
-
-    position: absolute;
-    top: 2.62vw;
-    right: 2.7vw;
-    // top: 2.60vw;
+    top: 0vw !important;
+    right: 0.3vw !important;
     height: 1.26vw !important;
     border-radius: 1.34vw !important;
     min-width: 2.67vw !important;
+    cursor: pointer !important;
     small {
-        // padding: 1px !important;
-        // top: 0.08vw;
+        cursor: pointer !important;
         width: 1.2vw !important;
         height: 1.2vw !important;
         right: calc(100% - 1.2vw) !important;    
     }   
 }
-
-// 
-
-
-
-
-
-
 @media screen and (max-width: 600px) {
+    @media (max-width: 600px) {
+        .dark-theme {
+            .header {
+                background-color: var(--dark-background-color) !important;
+                color: var(--dark-text-color) !important;
+                .header__menu {
+                    .btn-menu span{
+                            background: #e0d9d9 !important;
+                    }
+                }
+            }
+        }
+    }
     body {
         position: relative;
         width: 100%; 
@@ -61,33 +228,24 @@
         .switch.switch-small {
             position: absolute ;
             left: 75vw;
-            top: 5.7vw;
+            top: 2.5vw !important;
             z-index: 1;
-            width: 7.6vw !important;;
-            height: 4vw !important;
+            width: 9.9vw !important;;
+            height: 5vw !important;
             border-radius: 29.41vw !important;   
             small {
-                // padding: 1px !important;
-                // top: 0.08vw;
-                width: 4vw !important;
-                height: 4vw !important;
-                right: calc(100% - 4vw) !important; 
+                width: 5vw !important;
+                height: 5vw !important;
+                right: calc(100% - 5vw) !important; 
             }   
         }
-        // object-fit: cover;
     }
 }
-
-
-
 element.style {
     left: 24px;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
     transition: 200ms transform, 200ms left;
-}
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 4px;
 }
 .swiper-pagination-clickable .swiper-pagination-bullet {
     cursor: pointer;
@@ -136,17 +294,7 @@ element.style {
     height: 8px;
     display: inline-block;
     border-radius: 50%;
-    background: #000;
     opacity: 0.2;
-}
-*, html, body {
-    margin: 0;
-    padding: 0;
-    font-family: "Inter", sans-serif;
-    scroll-behavior: smooth !important;
-}
-swiper[_ngcontent-ary-c19] .swiper-pagination[_ngcontent-ary-c19] {
-    color: white;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
     left: 50%;
@@ -184,17 +332,17 @@ swiper[_ngcontent-ary-c19] .swiper-pagination[_ngcontent-ary-c19] {
     padding: 0;
     z-index: 1;
 }
+.swiper-pagination .swiper-pagination-clickable:active {
+  background: green !important;
+}
+section[_ngcontent-ttn-c19] swiper[_ngcontent-ttn-c19] .swiper-pagination[_ngcontent-ttn-c19]:active {
+    background-color: red !important;
+}
 :root {
     --swiper-navigation-size: 44px;
+    background-color: none;
+    color: none;
 }
 :root {
     --swiper-theme-color: #ffffff !important;
 }
-:root {
-    // position: absolute;
-// width: 120%;
-    --swiper-navigation-size: 44px;
-    --swiper-navigation-color: #5571c5 !important;
-}
-
-

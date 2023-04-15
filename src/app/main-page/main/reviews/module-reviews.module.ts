@@ -8,8 +8,6 @@ import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
   imports: [
     CommonModule,
     NgxUsefulSwiperModule
-
-    
   ]
 })
 export class ReviewsModule { }

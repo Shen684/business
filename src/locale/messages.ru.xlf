@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template" target-language="ru">
+    <body>
+      <trans-unit id="h_glav" datatype="html">
+        <source>главная</source>
+        <target>главная</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/header/header.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h_we" datatype="html">
+        <source>о нас</source>
+        <target>о нас</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/header/header.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h_tech" datatype="html">
+        <source>технологии</source>
+        <target>технологии</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/header/header.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="h_rew" datatype="html">
+        <source>отзывы</source>
+        <target>отзывы</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/header/header.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+        <trans-unit id="f_span" datatype="html">
+        <source>Разработка сайтов и веб-приложений «под ключ» </source>
+        <target>Разработка сайтов и веб-приложений «под ключ» </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/favorit/favorit.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f_btn" datatype="html">
+        <source>Связаться с нами</source>
+        <target>Связаться с нами</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/favorit/favorit.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f_diz" datatype="html">
+        <source>Дизайн</source>
+        <target>Дизайн</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/favorit/favorit.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f_op" datatype="html">
+        <source>Сделаем нешаблонный адаптивный дизайн на Ваш вкус или применим готовый</source>
+        <target>Сделаем нешаблонный адаптивный дизайн на Ваш вкус или применим готовый</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/favorit/favorit.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f_raz" datatype="html">
+        <source>Разработка</source>
+        <target>Разработка</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/favorit/favorit.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f_raz-op" datatype="html">
+        <source>Разработаем функциональность для любой потребности с помощью передовых технологий</source>
+        <target>Разработаем функциональность для любой потребности с помощью передовых технологий</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/favorit/favorit.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f_razv" datatype="html">
+        <source>Развертывание</source>
+        <target>Развертывание</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/favorit/favorit.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f_down" datatype="html">
+        <source>Загрузим веб-приложение на сервер и привяжем к домену</source>
+        <target>Загрузим веб-приложение на сервер и привяжем к домену</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/favorit/favorit.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f_we_are" datatype="html">
+        <source>О нас</source>
+        <target>О нас</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/favorit/favorit.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f_opisanie" datatype="html">
+        <source>В эпоху цифровых технологий веб-сайт - неотъемлимая часть маркетинга. Мы готовы создать сайт недорого и в срок. Это отличное дополнение к бизнесу, сайты, веб-приложения решают массу бизнес-задач. Мы поможем вам создать сайт, который раскроет идентичность вашего бренда, привлечет новых клиентов, автоматизирует многие задачи. Привлекательный дизайн (или его отсутствие) - первый признак, определяющий, зайдет ли пользователь на сайт еще раз. Мы создадим оптимальный дизайн под ваши требования: строгость или неординарность, минимализм, четкие геометрические пропорции или абстракция. Адаптивная верстка позволит выглядеть вашему сайту удобно и эргономично как на мониторах компьютеров, так и на смартфонах. Внедрим современные технологичные решения, согласуя поддержку стандартов разными браузерами. Нужна возможность автоматической рассылки писем по email, мессенджер или даже сервис видеозвонков - воплатим в реальность. Нужен корпоративный сайт, личный блог, онлайн-школа или сервис доставки еды? - ждем вашу заявку!</source>
+        <target>В эпоху цифровых технологий веб-сайт - неотъемлимая часть маркетинга. Мы готовы создать сайт недорого и в срок. Это отличное дополнение к бизнесу, сайты, веб-приложения решают массу бизнес-задач. Мы поможем вам создать сайт, который раскроет идентичность вашего бренда, привлечет новых клиентов, автоматизирует многие задачи. Привлекательный дизайн (или его отсутствие) - первый признак, определяющий, зайдет ли пользователь на сайт еще раз. Мы создадим оптимальный дизайн под ваши требования: строгость или неординарность, минимализм, четкие геометрические пропорции или абстракция. Адаптивная верстка позволит выглядеть вашему сайту удобно и эргономично как на мониторах компьютеров, так и на смартфонах. Внедрим современные технологичные решения, согласуя поддержку стандартов разными браузерами. Нужна возможность автоматической рассылки писем по email, мессенджер или даже сервис видеозвонков - воплатим в реальность. Нужен корпоративный сайт, личный блог, онлайн-школа или сервис доставки еды? - ждем вашу заявку!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/favorit/favorit.component.html</context>
+          <context context-type="linenumber">49,53</context>
+        </context-group>
+      </trans-unit>
+        <trans-unit id="form_z" datatype="html">
+        <source>ОСТАВЬТЕ ЗАЯВКУ</source>
+        <target>ОСТАВЬТЕ ЗАЯВКУ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/form/form.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="224973964621957726" datatype="html">
+        <source>ИМЯ</source>
+        <target>ИМЯ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/form/form.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form_name" datatype="html">
+        <source>Поле &apos;Имя&apos; обязательно для заполнения</source>
+        <target>Поле &apos;Имя&apos; обязательно для заполнения</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/form/form.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2760870645230671837" datatype="html">
+        <source>E-MAIL</source>
+        <target>E-MAIL</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/form/form.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form_email" datatype="html">
+        <source>Поле &apos;Email&apos; обязательно для заполнения</source>
+        <target>Поле &apos;Email&apos; обязательно для заполнения</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/form/form.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1253409507806100274" datatype="html">
+        <source>СООБЩЕНИЕ</source>
+        <target>СООБЩЕНИЕ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/form/form.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form_message" datatype="html">
+        <source>Поле &apos;Соощение&apos; обязательно для заполнения</source>
+        <target>Поле &apos;Соощение&apos; обязательно для заполнения</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/form/form.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form_send" datatype="html">
+        <source>Отправить</source>
+        <target>Отправить</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/form/form.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form_clear" datatype="html">
+        <source>Очистить</source>
+        <target>Очистить</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/form/form.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form_thx" datatype="html">
+        <source>Спасибо за заявку!</source>
+        <target>Спасибо за заявку!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/form/form.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form_connect" datatype="html">
+        <source>В скором времени мы с вами свяжемся по Email</source>
+        <target>В скором времени мы с вами свяжемся по Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/form/form.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+         <trans-unit id="r_r" datatype="html">
+        <source>Отзывы</source>
+        <target>Отзывы</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/reviews/reviews.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tech_tech" datatype="html">
+        <source>Технологии</source>
+        <target>Технологии</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/main/technologies/technologies.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+       <trans-unit id="foot_home" datatype="html">
+        <source>главная</source>
+        <target>главная</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/footer/footer.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="foot_about" datatype="html">
+        <source>о нас</source>
+        <target>о нас</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/footer/footer.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+       <trans-unit id="foot_tech" datatype="html">
+        <source>технологии</source>
+        <target>технологии</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/footer/footer.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="foot_rew" datatype="html">
+        <source>отзывы</source>
+        <target>отзывы</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/footer/footer.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="foot_all" datatype="html">
+        <source>Все права защищены</source>
+        <target>Все права защищены</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-page/footer/footer.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

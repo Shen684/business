@@ -9,21 +9,17 @@ import { ViewportScroller } from '@angular/common';
 })
 export class FooterComponent {
   constructor(private viewportScroller: ViewportScroller) {}
-
-scrollToAbout() {
-  this.viewportScroller.scrollToAnchor('about');
-}
-
-scrollToTech() {
-  this.viewportScroller.scrollToAnchor('technologies');
-}
-
-scrollToReview() {
-  this.viewportScroller.scrollToAnchor('reviews');
-}
-
-scrollToMain() {
-  this.viewportScroller.scrollToAnchor('/');
-}
-
+  
+  scrollToAbout() {
+    this.viewportScroller.scrollToAnchor('about');
+  }
+  scrollToTech() {
+    this.viewportScroller.scrollToAnchor('technologies');
+  }
+  scrollToReview() {
+    this.viewportScroller.scrollToAnchor('reviews');
+  }
+  scrollToMain() {
+    this.viewportScroller.scrollToAnchor('/');
+  }
 }

@@ -1,4 +1,4 @@
-import { Component, HostListener  } from '@angular/core';
+import { Component, HostListener, Input  } from '@angular/core';
 // import { DOCUMENT } from '@angular/common'; 
 
 @Component({
@@ -7,11 +7,12 @@ import { Component, HostListener  } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
-  windowScrolled?: boolean;
-  constructor() {}
+    windowScrolled?: boolean;
+    @Input() lang: string = 'ru';
+    constructor() {}
   
   @HostListener("window:scroll", [])
-
+    
   onWindowScroll() {
       if ( document.body.scrollTop > 500) {
           this.windowScrolled = true;
@@ -20,6 +21,7 @@ export class MainComponent {
           this.windowScrolled = false;
       }
   }
+
   scrollToTop() {
       (function smoothscroll() {
           const currentScroll =  document.body.scrollTop;

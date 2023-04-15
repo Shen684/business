@@ -1,12 +1,10 @@
 
 .tech {
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     .for_span {
         grid-column: 2/3;
-        // height: 6.25vw ;
         justify-self: center;
         align-items: center;
         margin: 6.25vw 0px 4.38vw 0px;
@@ -14,13 +12,12 @@
             margin-bottom: 4.38vw;
             grid-column: 2/3;
             font-size: 2vw;
-            font-weight: 500;
+            font-weight: 600;
             justify-self: center;
             align-items: center;
         }
     }
 }
-
 .picture_1 {
     display: flex;
     justify-content: center;
@@ -31,71 +28,56 @@
     }
     
     $animationSpeed: 60s;
-    
-    // Animation
     @keyframes scroll {
         0% { transform: translateX(0); }
         100% { transform: translateX(calc(-15.63vw * 7))}
     }
-    
-    
-    // Styling
     .slider {
         background: white;
-        // box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-        // height: 100px;
         margin: auto;
         overflow:hidden;
         position: relative;
         width: 100%;
-        
         &::before,
         &::after {
             @include white-gradient;
             content: "";
-            // height: 100px;
             position: absolute;
-            // width: 200px;
             z-index: 2;
         }
-        
         &::after {
             right: 0;
             top: 0;
             transform: rotateZ(180deg);
         }
-    
         &::before {
             left: 0;
             top: 0;
         }
-        
         .slide-track {
+            .slide .html {
+                height: 8.10vw;
+                padding-top: 0;
+
+            }
+            .slide .css {
+                padding-top: 0.75vw;
+                height: 7.50vw;
+            }
             .slide .django {
                 height: 5vw;
                 padding-top: 1.56vw;
-
             }
             img {
-                // border: 1px solid black;
                 height: 8.38vw;
                 width: 8.38vw;
                 margin: 0 3.38vw;
-
-                // object-fit: cover;
             }
-
             animation: scroll $animationSpeed linear infinite;
             display: flex;
             width: calc(250px * 14);
             width: 100%;
-            // display: grid;
-            // grid-auto-flow: column;
-            // grid-template-columns: repeat(3, 1fr);
-            // grid-auto-rows: minmax(auto, 6.56vw);
         }
-        
-
     }
 }
 
@@ -104,52 +86,31 @@
     justify-content: center;
     align-items: center;
     background: white;
-
-    // @mixin white-gradient {
-    //     background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-    // }
-    
     $animationSpeed: 60s;
-    
-    // Animation
     @keyframes scroll-2 {
         0% {transform: translateX(-15.63vw * 7);}
         100% {transform: translateX(-1);}
-
     }
-    
-    
-    // Styling
     .slider-2 {
         background: white;
-        // box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-        // height: 100px;
         margin: auto;
         overflow:hidden;
         position: relative;
         width: 100%;
-        
         &::before,
         &::after {
-            // @include white-gradient;
             content: "";
-            // height: 100px;
             position: absolute;
-            // width: 200px;
             z-index: 2;
         }
-        
         &::after {
             right: 0;
             top: 0;
-            // transform: rotateZ(180deg);
         }
-    
         &::before {
             left: 0;
             top: 0;
         }
-        
         .slide-track-2 {
             .slide .figma {
                 width: 6.25vw;
@@ -161,7 +122,6 @@
                 height: 8.38vw;
                 width: 8.38vw;
                 margin: 1.88vw 3.38vw 0px 3.38vw;
-                // object-fit: cover;
             }
             animation: scroll-2 $animationSpeed linear infinite;
             display: flex;
@@ -178,10 +138,16 @@
             font-size: 8.53vw;
         }
     }
-
     .picture_1 {
         .slider {
             .slide-track {
+                .slide .html {
+                    height: 17vw;
+                }
+                .slide .css {
+                    height: 15.4vw;
+                    padding-top: 2vw;
+                }
                 .slide  img {
                     width: 17.60vw;
                     height: 17.60vw;
@@ -193,13 +159,12 @@
             }
         }
     }
-
     .picture_2 {
-        margin-top: 12.80vw;
+        padding-top: 12.80vw;
         .slider-2 {
             .slide-track-2 {
                 .slide  img {
-                    width: 17.60vw;
+                    width: 17.70vw;
                     height: 17.60vw;
                 }
                 .slide .figma {

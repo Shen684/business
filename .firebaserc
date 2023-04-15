@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "project-i18n": {
+      "hosting": {
+        "project": [
+          "webion"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "project-i18n"
+  }
+}

@@ -1,12 +1,12 @@
 <div class="favorit">
-    <span class="span">Разработка сайтов и веб-приложений «под ключ» </span>
-    <button class="btn" routerLink="/blocks" (click)="scrollToBlocks()">Связаться с нами</button>
+    <span class="span" i18n="@@f_span">Разработка сайтов и веб-приложений «под ключ» </span>
+    <button class="btn" routerLink="/blocks" (click)="scrollToBlocks()" i18n="@@f_btn">Связаться с нами</button>
 
     <div class="photos">
         <a href="#" class="slides">
             <div class="spans">
-                <span>Дизайн</span>
-                <span>Сделаем нешаблонный адаптивный дизайн на Ваш вкус или применим готовый</span>
+                <span i18n="@@f_diz">Дизайн</span>
+                <span i18n="@@f_op">Сделаем нешаблонный адаптивный дизайн на Ваш вкус или применим готовый</span>
             </div>
             
             <input type="radio" id="slide1" name="slide" checked="">
@@ -17,8 +17,8 @@
 
         <a href="#" class="slides">
             <div class="spans">
-                <span>Разработка</span>
-                <span>Разработаем функциональность для любой потребности с помощью передовых технологий</span>
+                <span i18n="@@f_raz">Разработка</span>
+                <span i18n="@@f_raz-op">Разработаем функциональность для любой потребности с помощью передовых технологий</span>
             </div>
 
             <input type="radio" id="slide2" name="slide">
@@ -28,8 +28,8 @@
 
         <a href="#" class="slides">
             <div class="spans">
-                <span>Развертывание</span>
-                <span>Загрузим веб-приложение на сервер и привяжем к домену</span>
+                <span i18n="@@f_razv">Развертывание</span>
+                <span i18n="@@f_down">Загрузим веб-приложение на сервер и привяжем к домену</span>
             </div>
 
             <input type="radio" id="slide3" name="slide">
@@ -37,16 +37,25 @@
             <img class="img_3" src="/assets/photo/imgonline-com-ua-Resize-0SJ3JvjrTn9.jpg" alt="">
         </a>
     </div>
-    <div class="photos_phone">
-        <img class="photo_slider_css" src="/assets/Новая папка/снимок1.png" alt="">
-        <img class="photo_slider_css" src="/assets/Новая папка/снимок2.png" alt="">
-        <img class="photo_slider_css" src="/assets/Новая папка/снимок3.jpeg" alt="">
+
+    <div class="photos_phone" *ngIf="!togTranslate">
+        <img class="photo_slider_css" src="/assets/photoRu/Снимок1ru.PNG" alt="">
+        <img class="photo_slider_css" src="/assets/photoRu/Снимок2ru.PNG" alt="">
+        <img class="photo_slider_css" src="/assets/photoRu/Снимок3ru.PNG" alt="">
+    </div>
+
+    <div class="photos_phone" *ngIf="togTranslate">
+        <img class="photo_slider_css" src="/assets/photoEn/Снимок1.PNG" alt="">
+        <img class="photo_slider_css" src="/assets/photoEn/Снимок2.PNG" alt="">
+        <img class="photo_slider_css" src="/assets/photoEn/Снимок3.PNG" alt="">
     </div>
 
     <div id="about">
         <div class="absolute">
-            <span>О нас</span>
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
+            <span i18n="@@f_we_are">О нас</span>
+            <span i18n="@@f_opisanie">В эпоху цифровых технологий веб-сайт - неотъемлимая часть маркетинга. Мы готовы создать сайт недорого и в срок.
+                Это отличное дополнение к бизнесу, сайты, веб-приложения решают массу бизнес-задач. Мы поможем вам создать сайт, который раскроет идентичность вашего бренда, привлечет новых клиентов, автоматизирует многие задачи. Привлекательный дизайн (или его отсутствие) - первый признак, определяющий, зайдет ли пользователь на сайт еще раз. Мы создадим оптимальный дизайн под ваши требования: строгость или неординарность, минимализм, четкие геометрические пропорции или абстракция. Адаптивная верстка позволит выглядеть вашему сайту удобно и эргономично как на мониторах компьютеров, так и на смартфонах. Внедрим современные технологичные решения, согласуя поддержку стандартов разными браузерами. Нужна возможность автоматической рассылки писем по email, мессенджер или даже сервис видеозвонков - воплатим в реальность.
+                Нужен корпоративный сайт, личный блог, онлайн-школа или сервис доставки еды? - ждем вашу заявку!</span>
         </div>
     </div>
 </div>

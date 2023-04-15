@@ -1,9 +1,6 @@
-import { Component, Input } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { FormGroup, FormControl } from '@angular/forms';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ServiceReviewsService } from './service-reviews.service';
 import { OnInit } from '@angular/core';
-import { InterfaceRew } from './interface-rew';
 import { SwiperOptions } from 'swiper';
 
 @Component({
@@ -13,10 +10,11 @@ import { SwiperOptions } from 'swiper';
   providers: [ServiceReviewsService]
 })
 export class ReviewsComponent implements OnInit {
-  // reviews?: InterfaceRew[];
   reviews!: any;
   currentIndex: number = 4;
-
+  client_name_en: any;
+  texts!: {};
+  public res: any;
   
   constructor(private review: ServiceReviewsService) {}
   
@@ -29,27 +27,35 @@ export class ReviewsComponent implements OnInit {
     spaceBetween: 30
   };
 
-  
   getData() {
     this.review.getReviews().subscribe((res) => {
       this.reviews = res
       this.currentIndex = 0;
-      console.log(this.reviews);
     })
   }
+  localLang = localStorage.getItem('lang')
+
+  getText(i: number) {
+    let par = `text_${this.localLang}`
+    return this.reviews[i][par]
+  }
   
-  public ngOnInit() {
+  getName(i: number) {
+    let par = `client_name_${this.localLang}`
+    return this.reviews[i][par]
+  }
+    
+  ngOnInit() {
     this.getData()
   }
   
+
   goToPrevious(): void {
     const isFirstSlide = this.currentIndex === 0;
     const newIndex = isFirstSlide
       ? this.reviews.length - 1
       : this.currentIndex - 1;
     this.currentIndex = newIndex;
-    console.log(this.currentIndex);
-    
   }
 
   goToNext(): void {
@@ -65,13 +71,4 @@ export class ReviewsComponent implements OnInit {
   getCurrentSlide() {
     this.currentIndex == this.reviews.id ? this.currentIndex : null
   }
-  // public changeSlide(currentRewiew: number) {
-  //    this.currentRewiew = this.reviews.id ;
-  //     this.currentRewiew = currentRewiew > 0 ? currentRewiew + 1 : currentRewiew - 1;
-  //     if (this.currentRewiew >= this.reviews.length || this.currentRewiew <= 0) {
-  //       currentRewiew = 0;
-  //     }
-  //     console.log(this.currentRewiew);
-  // }
-
 }
