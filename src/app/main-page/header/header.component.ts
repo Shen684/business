@@ -23,7 +23,13 @@ export class HeaderComponent implements AfterViewInit, OnInit {
   @Output() changeLang = new EventEmitter()
   
   
-  constructor(private viewportScroller: ViewportScroller) {}
+  constructor(private viewportScroller: ViewportScroller) {
+    let bolTrs = localStorage.getItem('lang')
+    if (bolTrs == null) {
+      localStorage.setItem('lang', 'ru')
+    }
+  }
+  
   localeList = [
     { code: 'en-US', label: 'English' },
     { code: 'ru', label: 'Русский' },

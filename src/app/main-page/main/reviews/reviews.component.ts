@@ -16,7 +16,9 @@ export class ReviewsComponent implements OnInit {
   texts!: {};
   public res: any;
   
-  constructor(private review: ServiceReviewsService) {}
+  constructor(private review: ServiceReviewsService) {
+    // localStorage.setItem('lang', 'ru')
+  }
   
   config: SwiperOptions = {
     pagination: { el: '.swiper-pagination', clickable: true,  dynamicBullets: true, },
@@ -33,15 +35,17 @@ export class ReviewsComponent implements OnInit {
       this.currentIndex = 0;
     })
   }
-  localLang = localStorage.getItem('lang')
-
+  
   getText(i: number) {
-    let par = `text_${this.localLang}`
+    let localLang = localStorage.getItem('lang')
+    let par = `text_${localLang}`
     return this.reviews[i][par]
   }
   
   getName(i: number) {
-    let par = `client_name_${this.localLang}`
+    // localStorage.setItem('lang', )
+    let localLang = localStorage.getItem('lang')
+    let par = `client_name_${localLang}`
     return this.reviews[i][par]
   }
     
