@@ -12,6 +12,7 @@
 .dark-theme {
     html, body {
         background-color: var(--dark-background-color) !important;
+        color: var(--dark-text-color) !important;
     }
     .header {
         background-color: var(--dark-background-color);
@@ -34,6 +35,16 @@
             }
         }
     }
+    .footer {
+        .footer__menu {
+            .footer__list {
+                li>a {
+                    color: var(--dark-text-color) !important;
+                }
+            }
+        }
+    }
+
     @media (max-width: 600px) {
         .header {
             background-color: var(--dark-background-color) !important;
@@ -101,6 +112,12 @@
                 .swiper-slide {
                     .allSection {
                         background-color: var(--dark-background-color);
+                        .name {
+                            color: var(--dark-text-color);
+                        }
+                        .text {
+                            color: var(--dark-text-color);
+                        }
                     }
                 }
             }
@@ -162,7 +179,24 @@
     .footer {
         --dark-background-color: #3A668B;
         background-color: var(--dark-background-color) !important;
-        color: var(--dark-text-color) !important;
+        .footer__menu {
+            .footer__list {
+                li>a {
+                    color: var(--dark-text-color) !important;
+                }
+            }
+            .links {
+                div {
+                    a {
+                        img {
+                        }
+                    }
+                }
+            }
+        }
+        span {
+            color: var(--dark-text-color) !important;
+        }
     }
 }
 
