@@ -3,6 +3,24 @@
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 0.13vw !important;
 }
+@media (max-width: 599px) {
+
+    .allBlock {
+        .rightBlock {
+            // .none {
+            //     form {
+            //         .buttons {
+            //             // .btn1 {
+            //             //     color: black !important;
+            //             //     font-weight: 400 !important;
+            //             // }
+            //         }
+            //     }
+            // }
+        }
+    }
+ }
+
 
 :root {
     --dark-background-color: #2D384A;
@@ -146,14 +164,14 @@
                 }
                 .buttons {
                     .btn1 {
+                        background-color: #294F74 !important;
+                        color: var(--dark-text-color) !important;
+                        border: 2px solid var(--dark-text-color) !important;
                         &:disabled{
                             border: 2px solid rgb(186, 186, 186) !important;
                             background: #e9e9e9 !important;
                             color: #5a5a5a !important;
                         }
-                        background-color: #294F74 !important;
-                        color: var(--dark-text-color) !important;
-                        border: 2px solid var(--dark-text-color) !important;
                         &:hover {
                             background-color: #375b7a !important;
                         }
@@ -167,8 +185,11 @@
                         border: 2px solid var(--dark-text-color) !important;
                         &:hover {
                             background-color: #375b7a !important;
+                            color: var(--dark-text-color) !important;
+                            // color: ;
                         }
                         &:active {
+                            color: var(--dark-text-color) !important;
                             background-color: #2e4b64 !important;
                         }
                     }
@@ -183,14 +204,6 @@
             .footer__list {
                 li>a {
                     color: var(--dark-text-color) !important;
-                }
-            }
-            .links {
-                div {
-                    a {
-                        img {
-                        }
-                    }
                 }
             }
         }
@@ -248,10 +261,29 @@
                 color: var(--dark-text-color) !important;
                 .header__menu {
                     .btn-menu span{
-                            background: #e0d9d9 !important;
+                        background: #e0d9d9 !important;
                     }
                 }
             }
+            .allBlock {
+                .rightBlock {
+                    .none {
+                        form {
+                            .buttons {
+                                .btn1 {
+                                    color: var(--dark-text-color) !important;
+                                    font-weight: 400 !important;
+                                }
+                                .btn2 {
+                                    color: var(--dark-text-color) !important;
+                                    font-weight: 400 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
         }
     }
     body {

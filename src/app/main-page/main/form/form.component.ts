@@ -13,6 +13,7 @@ import { NgForm } from '@angular/forms';
 export class FormComponent  {
   receivedUser: Form  | undefined ;
   done: boolean = false;
+  toggleDone: boolean = true
   user: Form = new Form('', '', '')
 
   constructor(private httpService: FormService) {
@@ -20,23 +21,13 @@ export class FormComponent  {
 
   allForm!: FormGroup;
   ngOnInit(): void {
-    this.allForm = new FormGroup({
-      name: new FormControl('', [  Validators.maxLength(255)]),
-      email: new FormControl('', [Validators.required, Validators.minLength(4), Validators.maxLength(255), Validators.email]),
-      text: new FormControl('', [Validators.required, Validators.minLength(4)]),
-    })
+    this.allForm = this.httpService.allForm
   }
 
   submit(user: Form) {
     this.httpService.postData(user)
-    .subscribe({
-      next:(data: any) => {this.receivedUser=data; this.done=true;},
-      error: error => console.log(error)
-    });
-    this.toggleDone = !this.toggleDone
+    this.toggleDone = this.httpService.toggleDone
   }
-
-  toggleDone: boolean = true
 
   changeDone() {
     this.toggleDone = !this.toggleDone

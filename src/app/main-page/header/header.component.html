@@ -29,7 +29,7 @@
                 (click)="menuToggle = false"
                 routerLink="/about" 
                 routerLinkActive="active"
-                (click)="scrollToAbout()"
+                (click)="scrAbout()"
                 i18n="@@h_we"
                 >о нас</a>
             </li>
@@ -38,7 +38,7 @@
                 (click)="menuToggle = false"
                 routerLink="/technologies"
                 routerLinkActive="active"
-                (click)="scrollToTech()"
+                (click)="scrTech()"
                 i18n="@@h_tech"
                 >технологии</a>
             </li>
@@ -47,7 +47,7 @@
                 (click)="menuToggle = false"
                 routerLink="/reviews"
                 routerLinkActive="active"
-                (click)="scrollToReview()"
+                (click)="scrReview()"
                 i18n="@@h_rew"
                 >отзывы</a>
             </li>
@@ -60,7 +60,7 @@
         </div>
         
         <div class="translate">
-            <a href="/en/" class="hrefEn" (click)="enLang()" *ngIf="!togTranslate">EN</a>
+            <a href="/en/" class="hrefEn" (click)="englishLang()" *ngIf="!togTranslate">EN</a>
         </div>
            
     </nav>

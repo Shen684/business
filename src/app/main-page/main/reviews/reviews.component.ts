@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { ServiceReviewsService } from './service-reviews.service';
 import { OnInit } from '@angular/core';
 import { SwiperOptions } from 'swiper';

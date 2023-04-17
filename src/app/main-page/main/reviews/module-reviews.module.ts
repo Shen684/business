@@ -7,7 +7,7 @@ import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
   declarations: [],
   imports: [
     CommonModule,
-    NgxUsefulSwiperModule
+    // NgxUsefulSwiperModule
   ]
 })
 export class ReviewsModule { }
